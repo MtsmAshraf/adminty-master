@@ -1,0 +1,5 @@
+@media (min-width: 1400px) {
+    .modified-card ul li{
+        width: 48% !important;
+    }
+}
