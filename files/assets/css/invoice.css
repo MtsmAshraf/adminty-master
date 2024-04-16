@@ -47,12 +47,19 @@ body{
     }
 }
 @media (max-width: 767px) {
+    .card{
+        width: 100%;
+    }
     .card .details{
         grid-template-columns: repeat(1,1fr);
+    }
+    .card .details .pair{
+        flex-direction: column;
     }
     .card .details .pair h5,
     .card .details .pair span{
         font-size: 14px;
+        width: 100%;
     }
 }
 .card iframe{
