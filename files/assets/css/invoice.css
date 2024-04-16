@@ -7,6 +7,54 @@ body{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.card .details{
+    border: 1px solid #ccc;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 4px;
+    display: grid;
+    direction: rtl;
+    grid-template-columns: repeat(3,1fr);
+    font-family: "Almarai", sans-serif;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card .details .pair{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* background-color: red; */
+    border-bottom: 1px solid #ccc;
+}
+.card .details .pair h5{
+    padding: 10px;
+    background-color: #01aaad;
+    width: 35%;
+    color: white;
+    font-size: 16px;
+    height: 100%;
+    text-wrap: nowrap;
+    text-align: center;
+}
+.card .details .pair span{
+    text-align: center;
+    padding: 10px;
+    flex: 1;
+}
+@media (max-width: 1300px) {
+    .card .details{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 767px) {
+    .card .details{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .card .details .pair h5,
+    .card .details .pair span{
+        font-size: 14px;
+    }
+}
 .card iframe{
     min-height: 1200px;
     max-width: 100%;
