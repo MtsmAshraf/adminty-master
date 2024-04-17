@@ -1713,7 +1713,7 @@
                                         <div class="col-lg-8">
                                             <div class="page-header-title">
                                                 <div class="d-inline">
-                                                    <h4>إضافة عملية شحن</h4>
+                                                    <h4>إضافة عملية تخليص جمركي</h4>
                                                 </div>
                                             </div>
                                         </div>
@@ -1723,7 +1723,7 @@
                                                     <li class="breadcrumb-item">
                                                         <a href="index-1.htm"> <i class="feather icon-home"></i> </a>
                                                     </li>
-                                                    <li class="breadcrumb-item"><a href="#!">إضافة عملية شحن</a>
+                                                    <li class="breadcrumb-item"><a href="#!">إضافة عملية تخليص جمركي</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1735,7 +1735,7 @@
                                 <!-- Page body start -->
                                 <div class="card">
                                     <div class="card-block" dir="rtl">
-                                        <h4 class="sub-title">أدخل تفاصيل عملية الشحن</h4>
+                                        <h4 class="sub-title">أدخل تفاصيل تخليص جمركي</h4>
                                         <form class="row">
                                             <div class="form-group row col-sm-6 col-md-4">
                                                 <label class="col-sm-12 col-form-label">رقم البوليصة</label>
@@ -2197,15 +2197,15 @@
                                                     <input type="text" style="border-radius: 4px;" class="form-control" placeholder="">
                                                 </div>
                                             </div>
-                                            <div class="form-group row text-center" style="position: relative; margin-left: auto; margin-right: auto; width: 70%;">
+                                            <div class="form-group row text-center" style="position: relative; margin-left: auto; margin-right: auto; width: 70%;" id="drag-area">
                                                 <label class="col-sm-12 col-form-label">أضف المرفقات</label>
                                                 <div class="col-sm-12">
-                                                    <label class="col-sm-12 col-form-label" for="upload-bill" style="display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px; border: 1px dashed #ccc;  height: 140px; background-color: #eee; border-radius: 4px;">
+                                                    <label id="img-view" class="col-sm-12 col-form-label" for="upload-bill" style="display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 10px; border: 1px dashed #ccc;  height: 140px; background-color: #eee; border-radius: 4px; background-size: cover; background-repeat: no-repeat;">
                                                         <h5 style="color: #666;">اسحب الملفات هنا</h5>
                                                         <span style="color: #999;">أو</span>
                                                         <h5 style="color: #666;">اضغط لرفع المرفقات</h5>
                                                     </label>
-                                                    <input type="file" id="upload-bill" class="form-control" style="border: none; position: absolute; visibility: hidden;">
+                                                    <input type="file" id="upload-bill" class="form-control" hidden>
                                                 </div>
                                             </div>
                                             <script>
@@ -2434,6 +2434,7 @@
 
   gtag('config', 'UA-23581568-13');
 </script>
+<script src="./files/assets/js/addBill.js"></script>
 </body>
 
 </html>
