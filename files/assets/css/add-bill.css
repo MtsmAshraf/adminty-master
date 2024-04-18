@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.selector-element {
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+.selector-element div{
+    transition: all 0.2s 0s linear;
+    position: relative;
+    min-width: fit-content;
+}
+.selector-element div::before{
+    content: "✓";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -20%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #1bdd39;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+.selector-element div:has(>input:checked){
+    background-color: #01a9ac !important;
+    color: white;
+}
+.selector-element div:has(>input:checked)::before{
+    visibility: visible;
+}
